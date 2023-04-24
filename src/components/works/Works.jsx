@@ -19,7 +19,7 @@ export default function Works() {
     {
       id:"2",
       icon: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Wxr2KzSY6TFf-QpNtRYIFwHaHX%26pid%3DApi&f=1&ipt=264179467b6ef48bfea6968843f8a98cc10b87dcaefc272b3dd2b743a58de20d&ipo=images",
-      title: "Web bile Application",
+      title: "Web Application",
       des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, ratione",
       img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.qualogy.com%2Fstatic%2Fupload%2Flightbox%2F696354d6-7031-4fda-a024-a233b3ab00b2%2F1.png&f=1&nofb=1&ipt=baccd4a5a40dcffdde24228a2372db42d1e03a9daff22a3a73242a25411015c7&ipo=images",
     },
