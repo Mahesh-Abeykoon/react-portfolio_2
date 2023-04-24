@@ -27,7 +27,7 @@ export default function Works() {
     {
       id:"3",
       icon: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.TDDChp5nL5ThuVcWbK0JlgHaHv%26pid%3DApi&f=1&ipt=73402d7c471915579c4fff097f028c900d57ad7ec2b79d195370a95f5640895b&ipo=images",
-      title: "Unity 3D Game",
+      title: "Unity Game",
       des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, ratione",
       img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.K4HxPY0Vb37ccNwhILBumQHaEK%26pid%3DApi&f=1&ipt=eda27f8e2aa29fe21835467255ae0ad97b69317bb797edfdab6cc9c807dc2ac7&ipo=images",
     },
