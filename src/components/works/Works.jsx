@@ -1,7 +1,7 @@
-import './works.scss'
+import { useState } from 'react';
 import aL from '../assets/aL.png';
 import aR from '../assets/aR.png';
-import { useState } from 'react';
+import './works.scss'
 
 export default function Works() {
 
