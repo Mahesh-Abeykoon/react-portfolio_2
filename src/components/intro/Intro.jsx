@@ -1,5 +1,5 @@
 import  './intro.scss';
-import img from '../assets/1.png'
+import img from '../assets/1.jpg'
 import arrow from '../assets/arrow.png'
 import {init} from 'ityped';
 import { useEffect, useRef } from 'react';
