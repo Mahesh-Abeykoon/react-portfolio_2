@@ -2,6 +2,7 @@ import { MenuOpen } from '@mui/icons-material';
 import './topbar.scss'
 import MailIcon from '@mui/icons-material/Mail';
 import {Avatar} from '@mui/material';
+import img from '../assets/11.jpg'
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
@@ -11,8 +12,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <a href="#intro" className="logo">
           </a>   
           <Avatar
-              //src="/assets/1.jpg"
-              src="https://maheshabeykoon.github.io/assets/img/profile-img.jpg"
+              src={img}
               sx={{ width: 40, height: 40 }}
             />
           <div className="itemContainer">
