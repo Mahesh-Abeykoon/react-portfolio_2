@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .intro {
-    background-color: white;
+    background-color:rgb(15, 15, 22);
     display: flex;
 
     @include mobile {
@@ -15,14 +15,16 @@
         align-items: center;
 
         .imageContainer {
-            width: 520px;
-            height: 520px;
+            width: 400px;
+            height: 400px;
             border-radius: 50%;
+            margin: 80px 120px;
             display: flex;
             align-items: flex-end;
             justify-content: center;
             float: left;
             background-color: rgb(38, 38, 42);
+            background: linear-gradient(90deg,#294159 2.34%,#1c181c 100.78%);
 
             @include mobile {
                 align-items: flex-start;
@@ -30,6 +32,8 @@
 
             img {
                 height: 90%;
+                opacity: 0.5;
+                
 
                 @include mobile {
                     height: 50%;
@@ -39,7 +43,8 @@
     }
     .right {
         flex: 0.5;
-        background-color: rgb(63, 63, 64);
+        background-color: rgb(13, 13, 20);
+
         position: relative;
 
         .wrapper {
@@ -58,6 +63,11 @@
             h1{
                 font-size: 60px;
                 margin: 10px 0;
+                font-family: sans-serif;
+                //background: linear-gradient(to right, #FFC371, #FF5F6D);
+                background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
 
                  @include mobile {
                     font-size: 40px;
@@ -65,9 +75,11 @@
             }
             h2{
                 font-size: 35px;
+                color: rgb(194, 200, 203);
             }
             h3{
                 font-size: 30px;
+                color: rgb(194, 200, 203);
                 
                 @include mobile {
                     font-size: 20px;
@@ -75,7 +87,9 @@
 
                 span{
                     font-size: inherit;
-                    color: aquamarine;
+                    background: linear-gradient(90deg,#ff7170 2.34%,#ffe57f 100.78%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
 
                 .ityped-cursor {
@@ -98,8 +112,8 @@
             left: 50%;
             
             img{
-                width: 30px;
-                animation: arroBlink 2s infinite;
+                width: 40px;
+                animation: arroBlink 3s infinite;
             }
 
             @keyframes arroBlink {
