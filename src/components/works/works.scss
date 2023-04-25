@@ -1,7 +1,7 @@
 @import '../../global.scss';
 
 .works {
-    background-color: rgb(43, 61, 87);
+    background-color:#010911;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,6 +11,7 @@
         height: 45px;
         position: absolute;
         cursor: pointer;
+        animation: arroBlink 1s infinite;
 
         @include mobile {
             //display: none;
@@ -46,7 +47,7 @@
             .item {
                 width: 700px;
                 height: 100%;
-                background-color: rgb(90, 148, 202);
+                background-color: rgb(218, 226, 233);
                 border-radius: 20px;
                 display: flex;
                 align-items: center;
