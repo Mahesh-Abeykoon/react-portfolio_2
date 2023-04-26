@@ -1,83 +1,209 @@
-@import '../../global.scss';
+// @import '../../global.scss';
 
-.contact {
-    background-color: rgb(153, 236, 153);
+// .contact {
+//     background-color: rgb(153, 236, 153);
+//     display: flex;
+
+//     @include mobile {
+//         flex-direction: column;
+//     }
+
+//     .left {
+//         flex:1;
+//         overflow: hidden;
+
+//         .img {
+//             height: 100%;
+//         }
+//     }
+//     .right {
+//         flex: 1;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: space-around;
+
+//         h2{
+//             font-size: 30px;
+//         }
+
+//         form{
+//             width: 70%;
+//             height: 70%;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: space-around;
+
+//             input{
+//                 width: 300px;
+//                 height: 30px;
+//                 font-size: 14px;
+
+//                 @include mobile {
+//                     width: 200px;
+//                     height: 20px;
+//                 }
+
+//             }
+
+//             textarea {
+//                 width: 300px;
+//                 height: 200px;
+//                 font-size: 14px;
+
+//                 @include mobile {
+//                     width: 200px;
+//                     height: 100px;
+//                 }
+//             }
+
+
+//             button {
+//                 width: 150px;
+//                 height: 30px;
+//                 color: white;
+//                 background-color: aqua;
+//                 border: none;
+//                 border-radius: 10px;
+//                 font-weight: 500;
+//                 cursor: pointer;
+
+//                 &:focus {
+//                     outline: none;
+//                 }
+//             }
+
+//             span {
+//                 color: blueviolet;
+//             }
+//         }
+
+//     }
+// }
+$primary-color: #ffffff;
+$secondary-color: #444444;
+$accent-color: #5e97b0;
+
+.contact-section {
+  //background-image: url("../assets//androidstudio.png");
+  background-size: cover;
+  background-position: center;
+  padding: 10px 0;
+  color: $primary-color;
+  background-color: #0f0f16;
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 22px;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    animation: slide-down 0.5s ease-out;
+    background: linear-gradient(90deg,#7b6aae 2.34%,#e5518f 100.78%); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+  }
+  .contact-info {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    @include mobile {
-        flex-direction: column;
-    }
+    div {
+      margin-right: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+      transition: transform 0.3s ease;
 
-    .left {
-        flex:1;
-        overflow: hidden;
+      &:hover {
+        transform: translateY(-5px);
+      }
 
-        .img {
-            height: 100%;
-        }
-    }
-    .right {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-
-        h2{
-            font-size: 30px;
-        }
-
-        form{
-            width: 70%;
-            height: 70%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-
-            input{
-                width: 300px;
-                height: 30px;
-                font-size: 14px;
-
-                @include mobile {
-                    width: 200px;
-                    height: 20px;
-                }
-
-            }
-
-            textarea {
-                width: 300px;
-                height: 200px;
-                font-size: 14px;
-
-                @include mobile {
-                    width: 200px;
-                    height: 100px;
-                }
-            }
-
-
-            button {
-                width: 150px;
-                height: 30px;
-                color: white;
-                background-color: aqua;
-                border: none;
-                border-radius: 10px;
-                font-weight: 500;
-                cursor: pointer;
-
-                &:focus {
-                    outline: none;
-                }
-            }
-
-            span {
-                color: blueviolet;
-            }
-        }
+      svg {
+        font-size: 1.7rem;
+        color: $accent-color;
+        margin-bottom: 10px;
+        animation: pulse 1s ease-in-out infinite;
+      }
 
     }
+  }
+
+  form {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 50px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: slide-up 0.5s ease-out;
+
+    .form-group {
+      margin-bottom: 10px;
+
+      label {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 10px;
+        color: $primary-color;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 9px;
+        border-radius: 5px;
+        border: none;
+        font-size: 1rem;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: $secondary-color;
+        transition: background-color 0.3s ease;
+
+        &:focus {
+          background-color: rgba(255, 255, 255, 0.8);
+        }
+      }
+
+      textarea {
+        height: 98px;
+        resize: none;
+      }
+    }
+
+    button[type="submit"] {
+      background-color: $accent-color;
+      color: $primary-color;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 0.90rem;
+      width: 160px;
+      height: 38px;
+
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: lighten($accent-color, 10%);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact-info {
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+
+      div {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    form {
+      margin-top: 10px;
+    }
+  }
 }
