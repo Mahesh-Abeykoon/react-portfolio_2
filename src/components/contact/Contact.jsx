@@ -1,4 +1,4 @@
-{/* Old code snippet */}
+ //Old code snippet 
 // import { useState } from 'react';
 // import './contact.scss'
 // export default function Contact() {
@@ -29,7 +29,7 @@
 //   )
 // }
 import React from "react";
-import { FaEnvelope, FaPhone, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaMedium, FaInstagram } from "react-icons/fa";
 import './contact.scss'
 
 export default function Contact() {
@@ -44,13 +44,21 @@ export default function Contact() {
             <form>
             <div className="contact-info">
               <h1>Get In Touch</h1>
-              <div><FaEnvelope /></div>
-              <div><FaPhone /></div>
-              <div><FaLinkedin /></div>
-              <div><FaGithub /></div>
+              <a href="mailto:maheshpabeykoon@gmail.com?subject=Hi Mahesh&body=You're hired!">
+                <div><FaEnvelope/></div>
+              </a>
+              <a href="https://github.com/Mahesh-Abeykoon">
+                <div><FaGithub /> </div>
+              </a>
+              <a href="https://www.linkedin.com/in/mahesh-abeykoon">
+                <div><FaLinkedin /> </div>
+              </a>
+              <a href="https://medium.com/@maheshoabeykoon">
+                <div><FaMedium /> </div>
+              </a>
             </div>
             {/* add 3rd party SMTP server */}
-            <form action="https://mailthis.to/maheshpabeykoon@gmail.com" method="POST" role="form" class="email-form">
+            <div action="https://mailthis.to/maheshpabeykoon@gmail.com" method="POST" role="form" class="email-form">
               <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input type="text" id="name" name="name" required />
@@ -64,7 +72,7 @@ export default function Contact() {
                 <textarea id="message" name="message" required></textarea>
               </div>
               <button type="submit">Send Message</button>
-              </form>
+              </div>
 
             </form>
           </div>
