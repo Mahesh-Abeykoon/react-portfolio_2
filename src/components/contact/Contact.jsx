@@ -1,3 +1,34 @@
+{/* Old code snippet */}
+// import { useState } from 'react';
+// import './contact.scss'
+// export default function Contact() {
+
+//   const [message, setMessage] = useState(false)
+
+//   const handleSubmit = (e)=>{
+//     e.preventDefault();
+//     setMessage(true);
+//   }
+
+//   return (
+//     <div className="contact" id="contact">
+//       <div className="left">
+//         <img src= ""/>
+//       </div>
+      
+//       <div className="right">
+//         <h2>Contact.</h2>
+//         <form onSubmit={handleSubmit}>
+//           <input type='text' placeholder='Email'/>
+//           <textarea placeholder='Message'></textarea> 
+//           <button type="submit">Send</button>
+//           {message && <span>Thanks, I'll reply</span>}
+//         </form>
+//       </div>
+//     </div>
+//   )
+// }
+import React from "react";
 import { FaEnvelope, FaPhone, FaLinkedin, FaGithub } from "react-icons/fa";
 import './contact.scss'
 
@@ -18,6 +49,8 @@ export default function Contact() {
               <div><FaLinkedin /></div>
               <div><FaGithub /></div>
             </div>
+            {/* add 3rd party SMTP server */}
+            <form action="https://mailthis.to/maheshpabeykoon@gmail.com" method="POST" role="form" class="email-form">
               <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input type="text" id="name" name="name" required />
@@ -31,6 +64,8 @@ export default function Contact() {
                 <textarea id="message" name="message" required></textarea>
               </div>
               <button type="submit">Send Message</button>
+              </form>
+
             </form>
           </div>
         </div>
