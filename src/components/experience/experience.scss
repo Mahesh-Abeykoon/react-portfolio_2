@@ -1,0 +1,120 @@
+$primary-color:linear-gradient(90deg, #28c3ee 0%, #a0aed3 100%);
+$secondary-color: #211f1c;
+$tertiary-color: #e1e2df;
+$font-color: linear-gradient(90deg, #8b6dcd 0%, #e467dc 100%);
+$font-family: "Montserrat", sans-serif;
+
+.experience {
+  background-color: $secondary-color;
+  padding-top: 30px;
+  display: flex;
+
+  .title-work,
+  .title-education {
+    background: $font-color;
+    -webkit-background-clip: text; /* for Safari */
+    -webkit-text-fill-color: transparent;
+    font-family: $font-family;
+    font-size: 25px;
+    font-weight: 700;
+    padding:40px;
+    //margin-bottom: 60vh;
+    text-transform: uppercase;
+  }
+
+
+
+  .grid-item-work,
+  .grid-item-education {
+    display: flex;
+    align-items: center;
+    //justify-content: center;
+    //flex-direction: column;
+    //position: relative;
+    //cursor: pointer;
+    transition: all 0.1s ease;
+    margin-top: 0vh;
+
+  }
+
+  .list-work,
+  .list-education {
+    text-align: left ;
+    margin-left: 12vh;
+    
+    .primary-work-topic,
+    .primary-education-topic {
+      background: linear-gradient(90deg, #f958ae 0%, #1b739c 100%);
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent;
+      font-family: $font-family;
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .primary-work,
+    .primary-education {
+      background: $primary-color;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      font-family: $font-family;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .secondary-work,
+    .secondary-education {
+      color: $tertiary-color;
+      font-family: $font-family;
+      font-size: 15px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .description-work,
+    .description-education {
+      color: $tertiary-color;
+      font-family: $font-family;
+      font-size: 14px;
+      margin-bottom: 1px;
+      line-height: 1.4;
+    }
+  }
+
+  .work {
+    width: 100%;
+    max-width: 200px;
+    transition: all 0.2s ease;  
+    margin-left: auto;
+    filter: grayscale(100%);
+   
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .education {
+    width: 100%;
+    max-width: 90px;
+    transition: all 0.2s ease;
+    margin-left: 25vh;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    filter: grayscale(100%);
+
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .grid-item-work:hover .work {
+    filter: none;
+  }
+
+  .grid-item-education:hover .education {
+    filter: none;
+  }
+}
+
