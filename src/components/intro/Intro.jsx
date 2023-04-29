@@ -5,8 +5,9 @@ import {init} from 'ityped';
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { images } from '../constants';
+import '../../stars.scss'
 export default function Intro() {
-  
+
   const scaleVariants = {
     whileInView: {
       scale: [0, 1],
@@ -30,7 +31,7 @@ export default function Intro() {
   }, [])
 
   return (
-    <div className="intro" id="intro">
+    <div className="intro" id="intro">  
       <div className="left">
         <div className="imageContainer">
           <img src={img} />
@@ -50,6 +51,10 @@ export default function Intro() {
         ))}
       </motion.div>  
       <div className="right">
+            {/* import stars from stars.scss */}
+        <div id="stars" />
+        <div id="stars2" />
+        <div id="stars3" />
         <div className="wrapper">
           <h2>Hi there I'm</h2>
           <h1>Mahesh Abeykoon</h1>

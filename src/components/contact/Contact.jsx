@@ -31,10 +31,14 @@
 import React from "react";
 import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaMedium, FaInstagram } from "react-icons/fa";
 import './contact.scss'
-
+import '../../stars.scss';
 export default function Contact() {
   return (
     <section className="contact-section" id="contact">
+              
+        <div id="stars" />
+        <div id="stars2" />
+        <div id="stars3" />
       <div className="container">
         <div className="row">
           <div className="col-md-6">
@@ -58,7 +62,8 @@ export default function Contact() {
               </a>
             </div>
             {/* add 3rd party SMTP server */}
-            <div action="https://mailthis.to/maheshpabeykoon@gmail.com" method="POST" role="form" class="email-form">
+            <form className="mailthisform" action="https://mailthis.to/maheshpabeykoon@gmail.com" method="POST" >
+              <div>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input type="text" id="name" name="name" required />
@@ -73,6 +78,7 @@ export default function Contact() {
               </div>
               <button type="submit">Send Message</button>
               </div>
+              </form>
 
             </form>
           </div>
