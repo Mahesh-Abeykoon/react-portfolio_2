@@ -7,7 +7,7 @@ import Works from './components/works/Works';
 import Experience from './components/experience/Experience';
 import Contact from './components/contact/Contact';
 import Menu from './components/menu/Menu';
-
+import Skills from './components/techskills/Skills';
 import './app.scss';
 import { useState } from 'react';
 function App() {
@@ -23,7 +23,7 @@ function App() {
         <Works/>
         <Testimonials/>
         <Contact/>
-    
+        <Skills/>
       </div>
     </div>
   );
