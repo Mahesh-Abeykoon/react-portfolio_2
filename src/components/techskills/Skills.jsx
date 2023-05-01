@@ -21,7 +21,7 @@ import node from '../assets/node.png';
 
 export default function Skills() {
   return (
-    <section className="skills-section">
+    <section className="skills-section" id="skills">
       <h2>Technical Skills</h2>
       <div className="skills-container">
         <div className="languages">
