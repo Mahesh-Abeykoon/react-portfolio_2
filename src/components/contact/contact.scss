@@ -81,6 +81,8 @@
 
 //     }
 // }
+
+@import "../../global.scss";
 $primary-color: #ffffff;
 $secondary-color: #444444;
 $accent-color: #5e97b0;
@@ -93,6 +95,10 @@ $accent-color: #5e97b0;
   color: $primary-color;
   background-color: #0f0f16;
   overflow:hidden;
+
+  @include mobile {
+    overflow: scroll;
+  }
  
   .mailthisform{
     background-color: rgba(0, 0, 0, 0.7);
@@ -111,12 +117,18 @@ $accent-color: #5e97b0;
     background: linear-gradient(90deg,#7b6aae 2.34%,#e5518f 100.78%); 
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
+
+    @include mobile {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+   
   }
   .contact-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    
     div {
       margin-right: 30px;
       margin-bottom: 30px;
@@ -132,6 +144,10 @@ $accent-color: #5e97b0;
         color: $accent-color;
         margin-bottom: 10px;
         animation: pulse 1s ease-in-out infinite;
+        
+        @include mobile {
+          font-size: 1rem;  
+        }
       }
 
     }
@@ -155,6 +171,11 @@ $accent-color: #5e97b0;
         margin-bottom: 10px;
         color: $primary-color;
         text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+        @include mobile {
+          font-size: 10px;
+          margin-bottom: 8px;
+        }
       }
 
       input,
@@ -167,6 +188,11 @@ $accent-color: #5e97b0;
         background-color: rgba(255, 255, 255, 0.5);
         color: $secondary-color;
         transition: background-color 0.3s ease;
+
+        @include mobile {
+          width: 90%;
+          padding: 5px;
+        }
 
         &:focus {
           background-color: rgba(255, 255, 255, 0.8);
@@ -188,6 +214,14 @@ $accent-color: #5e97b0;
       font-size: 0.90rem;
       width: 160px;
       height: 38px;
+
+      @include mobile {
+        font-size: 0.70rem;
+        width: 110px;
+        height: 28px;
+        border-radius: 3px;
+        padding: 8px 10px;
+      }
 
       cursor: pointer;
       transition: background-color 0.3s ease;
