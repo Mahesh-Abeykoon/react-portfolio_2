@@ -22,13 +22,17 @@
   max-width: 1000px;
   margin: 0 auto;
 }
-
+.languages {
+  display: flex;
+  margin-right: 30px;
+ 
+}
 .skill {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
   padding: 20px;
   background-color: #081b55;
   border-radius: 20px;
