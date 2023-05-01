@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .skills-section {
   background-color: #161d5d;
   padding: 50px 0;
@@ -11,22 +13,33 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+    @include mobile {
+      font-size: 20px;
+      margin-bottom: 1px;
+    }
+
   }
 }
 
 .skills-container {
+  .languages {
+    display: flex;
+    margin-right: 30px;
+   
+  }
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   max-width: 1000px;
   margin: 0 auto;
+  
+  @include mobile {
+    height: 100%;
+
+  }
 }
-.languages {
-  display: flex;
-  margin-right: 30px;
- 
-}
+
 .skill {
   display: flex;
   flex-direction: column;
@@ -41,6 +54,11 @@
   width: 80px;
   height: 100px;
 
+  @include mobile {
+    height: 17%;
+    width: 5%;
+  }
+
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(167, 156, 155, 0.2);
@@ -50,6 +68,11 @@
     width: 30px;
     height: 30px;
     margin-bottom: 20px;
+
+    @include mobile {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   h3 {
@@ -57,5 +80,9 @@
     //font-weight: 600;
     color: #e8dede;
     //text-transform: uppercase;
+    
+    @include mobile {
+      font-size: 9px;;
+    }
   }
 }
