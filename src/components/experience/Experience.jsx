@@ -6,23 +6,6 @@ import './experience.scss';
 import universityLogo from "../assets/japura.png"
 import affinitiLogo from "../assets/affiniti.png"
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(3),
-  },
-  divider: {
-    margin: theme.spacing(3),
-  },
-  paper: {
-    padding: theme.spacing(2),
-    margin: theme.spacing(2),
-  },
-  avatar: {
-    backgroundColor: theme.palette.primary.main,
-  },
-}));
 
 const educationData = [
 {
@@ -31,7 +14,7 @@ const educationData = [
   degree: "BSc In Information Technology",
   duration: "2019-2023",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec dui at nisl sagittis imperdiet a vel augue. Donec interdum, nulla vel bibendum aliquet, sapien quam varius mi, at sagittis tellus massa quis ipsum.",
+    "During my time at the University of Sri Jayewardenepura, I gained a strong foundation in IT concepts and technologies. I also honed my skills in problem-solving, critical thinking, and collaboration.",
 },
 ];
 
@@ -43,13 +26,12 @@ const experienceData = [
     position: "Software Developer",
     duration: "2022 - present",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec dui at nisl sagittis imperdiet a vel augue. Donec interdum, nulla vel bibendum aliquet, sapien quam varius mi, at sagittis tellus massa quis ipsum.",
+      "My work experience as a software developer (intern) at Affiniti Innovations has allowed me to apply the knowledge and skills I gained from my degree. I specialize in Java and Spring Boot, which I use to develop software applications that meet the unique needs of our clients.",
   },
 ];
 
 
 export default function Experience ()  {
-  const classes = useStyles();
 
 return (
   <div className="experience" id="experience">
