@@ -2,7 +2,6 @@
 import Topbar from './components/topbar/Topbar'
 import Intro from './components/intro/Intro';
 import Portfolio from './components/portfolio/Portfolio';
-import Testimonials from './components/testimonials/Testimonials'
 import Works from './components/works/Works';
 import Experience from './components/experience/Experience';
 import Contact from './components/contact/Contact';
@@ -21,7 +20,6 @@ function App() {
         <Portfolio/>
         <Experience/>
         <Works/>
-        <Testimonials/>
         <Contact/>
         <Skills/>
       </div>
