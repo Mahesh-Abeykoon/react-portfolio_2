@@ -1,15 +1,17 @@
 @import "../../global.scss";
 
 .skills-section {
-  background-color: #161d5d;
+  background-color: #010911;
   padding: 50px 0;
   text-align: center;
   overflow: hidden;
 
   h2 {
     margin-bottom: 2px;
-    font-size: 30px;
-    background: linear-gradient(380deg,#e9eef2 2.34%,#c31034 100.78%);
+    font-size: 35px;
+    margin-top: -20px;
+    font-weight: 800;
+    background: linear-gradient(20deg,#7dd596 33.34%,#64bded 60.78%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -25,6 +27,11 @@
   .languages {
     display: flex;
     margin-right: 30px;
+
+    @include mobile {
+      margin-left: 30px;
+
+    }
    
   }
   display: flex;
@@ -35,7 +42,7 @@
   margin: 0 auto;
   
   @include mobile {
-    height: 100%;
+    max-width: 700px;
 
   }
 }
@@ -47,7 +54,7 @@
   align-items: center;
   margin: 10px;
   padding: 20px;
-  background-color: #081b55;
+  background-color: #010d17;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(12, 11, 11, 0.1);
   transition: all 0.3s ease-in-out;
@@ -57,18 +64,23 @@
   @include mobile {
     height: 17%;
     width: 5%;
+    margin: 8px;
+    padding: 15px;
   }
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(167, 156, 155, 0.2);
+    box-shadow: 0 10px 10px rgba(57, 110, 110, 0.876);
   }
 
   img {
     width: 30px;
     height: 30px;
     margin-bottom: 20px;
-
+    
+    &:hover {
+      transform: scale(2.5);
+    }
     @include mobile {
       width: 20px;
       height: 20px;

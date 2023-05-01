@@ -10,8 +10,37 @@
     position: fixed;
     top: 0;
     z-index: 3;
-    transition: all 1s ease;
+    transition: all 1s ease; 
+    color: rgb(239, 232, 135);
+    
+    .icon {
+        font-size: 18px;
+        margin-right: 5px;
+        color: rgb(239, 232, 135);
+        &:hover {
+            transform: scale(1.1);
+          }
+    }
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 26vh;
+      
+        .fa-icon{
+            padding: 10px;
+            color: #d1d1a0;
+            margin-right: 8px;
+            margin-top: 3px;
 
+            &:hover {
+                transform: scale(0.8);
+              }
+        }
+        @include mobile {
+          display: none;
+        }
+    }
     .wrapper {
         padding: 10px 30px;
         display: flex;
@@ -21,7 +50,6 @@
         .left {
             display: flex;
             align-items: center;
-            
             .logo {
                 font-size: 40px;
                 font-weight: 700;
@@ -36,11 +64,6 @@
 
                 @include mobile {
                     display: none;
-                }
-                
-                .icon {
-                    font-size: 18px;
-                    margin-right: 5px;
                 }
 
                 span {
@@ -75,7 +98,14 @@
     &.active {
         background-color: $mainColor;
         color: white;
-
+        .icon {
+            color:white;
+        }
+  
+        .fa-icon{
+            padding: 10px;
+            color: #ffffff;    
+        }
         .hamburger {
             span{
                 &:first-child{
