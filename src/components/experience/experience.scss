@@ -42,7 +42,7 @@ $font-family: "Montserrat", sans-serif;
   .list-work,
   .list-education {
     text-align: left ;
-    margin-left: 12vh;
+    margin-left: 3vh;
     
     .primary-work-topic,
     .primary-education-topic {
@@ -96,6 +96,7 @@ $font-family: "Montserrat", sans-serif;
       font-size: 14px;
       margin-bottom: 1px;
       line-height: 1.4;
+      text-align: justify;
     
     @include mobile {
       font-size: 9px;
@@ -119,11 +120,10 @@ $font-family: "Montserrat", sans-serif;
     width: 100%;
     max-width: 90px;
     transition: all 0.2s ease;
-    margin-left: 25vh;
+    margin-left: 5vh;
     margin-top: 1vh;
     margin-bottom: 5vh;
     filter: grayscale(100%);
-
 
     &:hover {
       transform: scale(1.1);
