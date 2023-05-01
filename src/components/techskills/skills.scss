@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .skills-section {
-  background-color: #161d5d;
+  background-color: #010911;
   padding: 50px 0;
   text-align: center;
   overflow: hidden;
@@ -52,7 +52,7 @@
   align-items: center;
   margin: 10px;
   padding: 20px;
-  background-color: #081b55;
+  background-color: #010d17;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(12, 11, 11, 0.1);
   transition: all 0.3s ease-in-out;
@@ -68,7 +68,7 @@
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(167, 156, 155, 0.2);
+    box-shadow: 0 10px 10px rgba(57, 110, 110, 0.876);
   }
 
   img {
