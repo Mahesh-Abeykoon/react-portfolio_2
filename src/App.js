@@ -2,6 +2,7 @@
 import Topbar from './components/topbar/Topbar'
 import Intro from './components/intro/Intro';
 import Portfolio from './components/portfolio/Portfolio';
+import Testimonials from './components/testimonials/Testimonials'
 import Works from './components/works/Works';
 import Experience from './components/experience/Experience';
 import Contact from './components/contact/Contact';
@@ -17,11 +18,11 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro/>
-        <Portfolio/>
-        <Experience/>
-        <Works/>
-        <Contact/>
         <Skills/>
+        <Portfolio/>
+        <Works/>
+        <Experience/>
+        <Contact/>
       </div>
     </div>
   );
