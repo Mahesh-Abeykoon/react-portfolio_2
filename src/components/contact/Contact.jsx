@@ -85,9 +85,10 @@ export default function Contact() {
         </div>
           <div className="dot-navigation">
             <a href="#intro" className="dot"></a>
+            <a href="#skills" className="dot"></a>
             <a href="#portfolio" className="dot"></a>
-            <a href="#experience" className="dot"></a>
             <a href="#works" className="dot"></a>
+            <a href="#experience" className="dot"></a>
             <a href="#contact" className="dot"></a>
           </div>
       </div>
