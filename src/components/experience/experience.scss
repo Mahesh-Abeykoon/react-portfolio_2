@@ -4,7 +4,7 @@ $primary-color:linear-gradient(90deg, #28c3ee 0%, #a0aed3 100%);
 $secondary-color: #1b1924;
 $tertiary-color: #e1e2df;
 $font-color: linear-gradient(90deg, #8b6dcd 0%, #e467dc 100%);
-$font-family: "Montserrat", sans-serif;
+$font-family: 'Raleway', sans-serif;
 
 .experience {
   background-color: $secondary-color;
@@ -18,7 +18,7 @@ $font-family: "Montserrat", sans-serif;
     -webkit-text-fill-color: transparent;
     font-family: $font-family;
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 600;
     padding:40px;
     //margin-bottom: 60vh;
     text-transform: uppercase;
