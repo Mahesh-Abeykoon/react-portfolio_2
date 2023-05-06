@@ -1,5 +1,7 @@
 @import '../../global.scss';
 
+$font-family: 'Quicksand', sans-serif;
+
 .portfolio {
     background-color:#010d17;
 
@@ -14,6 +16,8 @@
         -webkit-background-clip: text; 
         -webkit-text-fill-color: transparent;
         margin-top: 40px;
+        font-family: $font-family;
+        font-weight: 700;
 
         @include mobile {
             font-size: 25px;
@@ -67,6 +71,7 @@
             h3 {
                 position: absolute;
                 font-size: 20px;
+                font-family: $font-family;
             }
             img {
                  width: 100%;
