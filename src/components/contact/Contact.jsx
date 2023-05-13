@@ -32,6 +32,7 @@ import React from "react";
 import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaMedium, FaInstagram } from "react-icons/fa";
 import './contact.scss'
 import '../../stars.scss';
+import Footer from '../footer/Footer'
 export default function Contact() {
   return (
     <section className="contact-section" id="contact">
@@ -79,7 +80,7 @@ export default function Contact() {
               <button type="submit">Send Message</button>
               </div>
               </form>
-
+              <Footer/>
             </form>
           </div>
         </div>
