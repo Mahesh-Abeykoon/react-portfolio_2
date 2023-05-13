@@ -10,7 +10,7 @@ const educationData = [
 {
   topic: "education",
   university: "University of Sri Jayewardenepura",
-  degree: "BSc In Information Technology",
+  degree: "BSc in Information Technology",
   duration: "2019-2023",
   description:
     "During my time at the University of Sri Jayewardenepura, I gained a strong foundation in IT concepts and technologies. I also honed my skills in problem-solving, critical thinking, and collaboration.",
@@ -23,7 +23,7 @@ const experienceData = [
     topic: "work",
     company: "Affiniti Innovations",
     position: "Software Developer",
-    duration: "2022 - present",
+    duration: "2022-present",
     description:
       "My work experience as a software developer (intern) at Affiniti Innovations has allowed me to apply the knowledge and skills I gained from my degree. I specialize in Java and Spring Boot, which I use to develop software applications that meet the unique needs of our clients.",
   },
