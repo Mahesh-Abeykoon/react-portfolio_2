@@ -47,7 +47,7 @@
             .item {
                 width: 700px;
                 height: 100%;
-                background-color: rgb(218, 226, 233);
+                background-color: rgb(139, 159, 219);
                 border-radius: 20px;
                 display: flex;
                 align-items: center;
@@ -77,7 +77,7 @@
                             width: 40px;
                             height: 40px;
                             border-radius: 50%;
-                            background-color: rgb(44, 36, 36);
+                            background-color: rgb(191, 191, 204);
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -90,7 +90,7 @@
                             }
 
                             img{
-                                width: 25px;
+                                width: 115px;
 
                                 @include mobile {
                                     width: 20px;
@@ -98,7 +98,7 @@
                             }
                         }
                         h2 {
-                            font-size: 20px;
+                            font-size: 18px;
 
                             @include mobile {
                                 font-size: 12px;

@@ -10,28 +10,39 @@ export default function Works() {
     
     {
       id:"1",
-      icon: "https://img.favpng.com/19/25/4/download-mobile-app-euclidean-vector-icon-png-favpng-rY9tQq5pa0sYDjjQg5Hpf6iTZ.jpg",
-      title: "Mobile Application",
-      des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, ratione",
-      img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.3dgSNrMDnSmghQElypFW-wHaE8%26pid%3DApi&f=1&ipt=50e7abe88475e1706b8f025895d482ddc3ebb1383f5c52d3513ad43f76f5357c&ipo=images",
+      icon: require("../assets/dysM.png"),
+      title: "Mobile App",
+      des: "Final year research project focused on creating a mobile application to assist dyslexic children.",
+      img: require("../assets/dysM.png"),
+      projects: "https://github.com/Mahesh-Abeykoon/dyslexia-app-for-kids",
     },
 
     {
       id:"2",
-      icon: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Wxr2KzSY6TFf-QpNtRYIFwHaHX%26pid%3DApi&f=1&ipt=264179467b6ef48bfea6968843f8a98cc10b87dcaefc272b3dd2b743a58de20d&ipo=images",
-      title: "Web Application",
-      des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, ratione",
-      img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.qualogy.com%2Fstatic%2Fupload%2Flightbox%2F696354d6-7031-4fda-a024-a233b3ab00b2%2F1.png&f=1&nofb=1&ipt=baccd4a5a40dcffdde24228a2372db42d1e03a9daff22a3a73242a25411015c7&ipo=images",
+      icon: require("../assets/englishApp.png"),
+      title: "English Learning App",
+      des: "Developed an English Learning Android application using React-Native",
+      img: require("../assets/englishApp.png"),
+      projects: "https://github.com/Mahesh-Abeykoon/smart-english-learningApp",
     },
 
     {
       id:"3",
-      icon: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.TDDChp5nL5ThuVcWbK0JlgHaHv%26pid%3DApi&f=1&ipt=73402d7c471915579c4fff097f028c900d57ad7ec2b79d195370a95f5640895b&ipo=images",
+      icon: require("../assets/unity3d.png"),
       title: "Unity Game",
-      des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, ratione",
-      img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.K4HxPY0Vb37ccNwhILBumQHaEK%26pid%3DApi&f=1&ipt=eda27f8e2aa29fe21835467255ae0ad97b69317bb797edfdab6cc9c807dc2ac7&ipo=images",
+      des: "This is a simple and attractive Unity 3D Game",
+      img: require("../assets/unity3d.png"),
+      projects: "https://github.com/Mahesh-Abeykoon/unity-roll-a-ball_mini-game/tree/master",
     },
 
+    {
+      id:"4",
+      icon: require("../assets/mernApp.png"),
+      title: "Mern App",
+      des: "Created a web application enabling users to post articles",
+      img: require("../assets/mernApp.png"),
+      projects: "https://github.com/Mahesh-Abeykoon/MERN-blog-application",
+    },
   ]
 
   const handleClick = (way)=>{
@@ -52,7 +63,7 @@ export default function Works() {
                 </div>
                 <h2>{d.title}</h2>
                 <p>{d.des}</p>
-                <span>Projects</span>
+                <span>{d.projects}</span>
               </div>
             </div>
             <div className="right">
