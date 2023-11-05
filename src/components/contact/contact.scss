@@ -91,7 +91,7 @@ $accent-color: #5e97b0;
   //background-image: url("../assets//androidstudio.png");
   background-size: cover;
   background-position: center;
-  padding: 10px 0;
+  padding: 2px 0;
   color: $primary-color;
   background-color: #0f0f16;
   overflow:hidden;
@@ -100,13 +100,6 @@ $accent-color: #5e97b0;
     overflow: scroll;
   }
  
-  .mailthisform{
-    background-color: rgba(0, 0, 0, 0.7);
-    display: block;
-    padding: 2.3vh;
-    
-  } 
-
   h1 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -130,7 +123,7 @@ $accent-color: #5e97b0;
 
     div {
       margin-right: 30px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       text-align: center;
       transition: transform 0.3s ease;
 
@@ -160,7 +153,6 @@ $accent-color: #5e97b0;
     margin: 0 auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     animation: slide-up 0.5s ease-out;
-
     .form-group {
       margin-bottom: 10px;
 

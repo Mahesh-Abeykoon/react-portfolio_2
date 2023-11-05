@@ -7,9 +7,8 @@ export default function Footer() {
   return (
       <div className='footer'>
         <p className="footer__text">
-          &copy; {year} Mahesh Abeykoon. All Rights Reserved.
-          
-        </p>
+        Copyright &copy; {year} Mahesh Abeykoon. All rights reserved.
+                </p>
       </div>
   
   )
