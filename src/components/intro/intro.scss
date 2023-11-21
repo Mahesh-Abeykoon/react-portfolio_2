@@ -17,26 +17,28 @@ $font-family: 'Caveat', cursive;
         align-items: center;
 
         .imageContainer {
-            width: 400px;
-            height: 400px;
+            width: 450px;
+            height: 450px;
             border-radius: 50%;
             margin: 80px 120px;
             display: flex;
             align-items: flex-end;
             justify-content: center;
             float: left;
-            background-color: rgb(38, 38, 42);
             background: linear-gradient(90deg,#294159 2.34%,#1c181c 100.78%);
-
+          
+            &:hover {
+              transition: filter 400ms;
+              filter: drop-shadow(0 0 0.5em #1073a1aa);
+            }
             @include mobile {
                 align-items: flex-start;
             }
 
             img {
-                height: 90%;
-                opacity: 0.5;
+                height: 100%;
+                opacity: 0.8;
                 
-
                 @include mobile {
                     height: 50%;
                 }
@@ -135,7 +137,27 @@ $font-family: 'Caveat', cursive;
         overflow:hidden;
 
         position: relative;
-
+        /* intro.scss */
+        .time {
+            h2 {
+              font-size: 40px;
+              font-weight: 400;
+              background: linear-gradient(90deg,#708ca8 2.34%,#6627a5 100.78%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              display: inline-flex;
+              box-sizing: border-box;
+              margin-left: 30rem;
+              margin-top: 4px;
+            }
+            h3 {
+              font-size: 25px;
+              background: linear-gradient(90deg,rgb(111, 185, 157) 2.34%,#5f61eb 100.78%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              margin-left: 30rem;
+            }
+        }
         .wrapper {
             width: 100%;
             height: 100%;
@@ -143,7 +165,7 @@ $font-family: 'Caveat', cursive;
             display: flex;
             flex-direction: column;
             justify-content: center;
-
+            margin-top: -58px;
             @include mobile {
                 padding-left: 0;
                 align-items: center;
@@ -157,6 +179,12 @@ $font-family: 'Caveat', cursive;
                 background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+
+                &:hover {
+                  filter: drop-shadow(0 0 0.4em rgba(243, 101, 196, 0.667));                
+                  transition: filter 300ms;
+
+                } 
 
                  @include mobile {
                     font-size: 40px;
@@ -204,7 +232,6 @@ $font-family: 'Caveat', cursive;
                 width: 40px;
                 animation: arroBlink 3s infinite;
             }
-
             @keyframes arroBlink {
                 100%{
                     opacity: 0;
