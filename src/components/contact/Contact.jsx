@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
  //Old code snippet 
 // import { useState } from 'react';
 // import './contact.scss'
@@ -42,7 +43,13 @@ export default function Contact() {
   const [senderName, setSenderName] = useState('');
   const [senderEmail, setSenderEmail] = useState('');
   const [emailSent, setEmailSent] = useState(false);
+  
+  const sectionIds = ['intro', 'skills', 'portfolio', 'works', 'experience', 'contact'];
+  const [activeDot, setActiveDot] = useState(1);
 
+  const handleDotClick = (dotNumber) => {
+    setActiveDot(dotNumber);
+  };
   const resetForm = () => {
     setSenderName('');
     setSenderEmail('');
@@ -151,7 +158,7 @@ export default function Contact() {
               <button type="submit">Send Message</button>
               {emailSent && (
               <div className="confirmation-message">
-                Thank you for reaching out! I'll reply soon.
+                Thank you for reaching out..! I'll reply soon.
               </div>
             )}
          
@@ -161,13 +168,15 @@ export default function Contact() {
         </div>
       
         <div className="dot-navigation">
-          <a href="#intro" className="dot"></a>
-          <a href="#skills" className="dot"></a>
-          <a href="#portfolio" className="dot"></a>
-          <a href="#works" className="dot"></a>
-          <a href="#experience" className="dot"></a>
-          <a href="#contact" className="dot"></a>
-        </div>
+        {sectionIds.map((sectionId, index) => (
+            <a 
+              key={index}
+              href={`#${sectionId}`}
+              className={`dot ${activeDot === index + 1 ? 'active' : ''}`}
+              onClick={() => handleDotClick(index + 1)}
+            ></a>
+          ))}
+      </div>
       </div>  
     </section>
   );
