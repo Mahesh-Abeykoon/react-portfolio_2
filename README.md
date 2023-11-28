@@ -8,7 +8,7 @@ This repository contains the source code for my personal portfolio website built
 
 ## Website
 
-Visit my portfolio: [https://github.com/Mahesh-Abeykoon/react-portfolio_2](https://github.com/Mahesh-Abeykoon/react-portfolio_2)
+Visit my portfolio: [https://github.com/Mahesh-Abeykoon/react-portfolio_2](https://mahesh-abeykoon.github.io/)
 
 ## Topics
 
