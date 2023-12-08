@@ -4,15 +4,13 @@ $font-family: 'Quicksand', sans-serif;
 
 .skills-section {
   background-color: #010911;
-  padding: 50px 0;
+  // padding: 50px 0;
   text-align: center;
   overflow: hidden;
 
   h2 {
-    margin-bottom: 2px;
     font-size: 35px;
     font-family: $font-family;
-    margin-top: -20px;
     font-weight: 600;
     background: linear-gradient(20deg,#7dd596 33.34%,#64bded 60.78%);
     -webkit-background-clip: text;
