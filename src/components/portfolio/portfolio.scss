@@ -82,8 +82,10 @@ $font-family: 'Quicksand', sans-serif;
 
             &:hover {
                 background-color: $mainColor;
+                transform: scale(1.1);
+
                 img{
-                    opacity: 0.2;
+                    opacity: 0.5;
                     z-index: 1;
                 }
             }
