@@ -49,8 +49,8 @@ $font-family: 'Quicksand', sans-serif;
         }
 
         .item {
-            width: 220px;
-            height: 150px;
+            width: 250px;
+            height: 180px;
             border-radius: 20px;
             border: 1px solid lightblue;
             margin: 10px 20px;
@@ -64,8 +64,9 @@ $font-family: 'Quicksand', sans-serif;
 
             @include mobile {
                 margin: 5px 0;
-                width: 130px;
-                height: 100px;
+                width: 40%;
+                height: 40%;
+                padding: 10px;
             }
 
             h3 {
