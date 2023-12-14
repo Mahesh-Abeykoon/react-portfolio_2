@@ -37,19 +37,13 @@ export default function Intro() {
   // let gradientColor;
 
   if (hours < 12) {
-  greeting = 'Good Morning!';
-  // gradientColor = 'linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100.78%)';
-} else if (hours >= 12 && hours < 18) {
-  greeting = 'Good Afternoon!';
-} else if (hours >= 18 && hours < 22 ) {
-  greeting = 'Good Evening!';
-} else  {
-  greeting = 'Good Night!';
-}
-  console.log(greeting)  
-  // } else {
-  //   greeting = 'Good Night!';
-  // }
+    greeting = 'Good Morning!';
+    // gradientColor = 'linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100.78%)';
+  } else if (hours < 18) {
+    greeting = 'Good Afternoon!';
+  } else {
+    greeting = 'Good Evening!';
+  }
   // const customeStyle = {
   //   color: gradientColor,
   // };
