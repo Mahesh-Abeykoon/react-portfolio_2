@@ -14,11 +14,12 @@ $font-family: 'Quicksand', sans-serif;
     font-weight: 600;
     background: linear-gradient(20deg,#7dd596 33.34%,#64bded 60.78%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;  
+    margin-top: 8px;
 
     @include mobile {
       font-size: 20px;
-      margin-bottom: 1px;
+      margin-top: 30px;
     }
 
   }
@@ -65,8 +66,8 @@ $font-family: 'Quicksand', sans-serif;
   @include mobile {
     height: 17%;
     width: 5%;
-    margin: 8px;
-    padding: 15px;
+    margin-top: 15px;
+    padding: 13px;
   }
 
   &:hover {
@@ -96,7 +97,7 @@ $font-family: 'Quicksand', sans-serif;
     font-family: $font-family;
 
     @include mobile {
-      font-size: 9px;;
+      font-size: 5.5px;;
     }
   }
 }
