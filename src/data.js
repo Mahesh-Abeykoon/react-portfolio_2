@@ -46,6 +46,16 @@ export const portfolioWeb = [
         title: "To-do App",
         img: "https://github.com/Mahesh-Abeykoon/react-to-do-app/blob/master/to-do-app.png?raw=true",
     },
+    {
+        id: 50,
+        title: "Auth App-Signup",
+        img: "https://github.com/Mahesh-Abeykoon/jwt-authentication-system/blob/master/auth-signup.png?raw=true",
+    }, 
+    {
+        id: 60,
+        title: "Auth App-Login",
+        img: "https://github.com/Mahesh-Abeykoon/jwt-authentication-system/blob/master/auth-login.png?raw=true",
+    },
 
 ]
 
