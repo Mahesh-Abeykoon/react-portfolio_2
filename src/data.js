@@ -36,7 +36,7 @@ export const portfolioWeb = [
     },
     {
         id: 30,
-        title: "Blog App Signup",
+        title: "Signup",
         img:
         "https://maheshabeykoon.github.io/assets/img/interface/web1.png"
     },
@@ -47,16 +47,6 @@ export const portfolioWeb = [
         img: "https://github.com/Mahesh-Abeykoon/react-to-do-app/blob/master/to-do-app.png?raw=true",
     },
 
-    {
-        id: 50,
-        title: "Auth App-Signup",
-        img: "https://github.com/Mahesh-Abeykoon/jwt-authentication-system/blob/master/auth-signup.png?raw=true",
-    }, 
-    {
-        id: 60,
-        title: "Auth App-Login",
-        img: "https://github.com/Mahesh-Abeykoon/jwt-authentication-system/blob/master/auth-login.png?raw=true",
-    },
 ]
 
 export const portfolioGame = [
