@@ -46,7 +46,7 @@ export default function Intro() {
 } else  {
   greeting = 'Good Night!';
 }
-  console.log(greeting)  
+
   // } else {
   //   greeting = 'Good Night!';
   // }
